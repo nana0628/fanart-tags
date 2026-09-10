@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FanArt Tags</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main class="app">
+		<!-- ヘッダー -->
+		<header class="header">
+			<div>
+				<h1 class="title"> ファンアートタグ一覧 </h1>
+			</div>
+		</header>
+		<!-- 年フィルター -->
+		<section class="panel filter">
+			<div class="filter-title"> 絞り込み </div>
+			<div id="years" class="years"></div>
+			<div id="count" class="count"></div>
+			<button id="clearYears" class="btn ghost" type="button"> 解除 </button>
+		</section>
+		<!-- お気に入り -->
+		<section class="panel section fav-section open" id="favoriteSection">
+			<div class="section-head">
+				<button class="chev" id="favoriteToggle" type="button"> 〉 </button>
+				<div class="section-title"> お気に入り </div>
+				<div id="favCount" class="count"> 0件 </div>
+			</div>
+			<div class="section-body fav-list" id="favList"></div>
+		</section>
+		<!--全開閉ボタン-->
+		<div class="group-controls">
+			<button id="toggleAllGroups" type="button"> すべて開く </button>
+		</div>
+		<!-- ユニット・メンバー -->
+		<div id="groups"></div>
+	</main>
+	<!-- コピー通知 -->
+	<div id="toast" class="toast"></div>
+	<!-- データ -->
+	<script src="js/member-data.js"></script>
+	<!-- アプリ本体 -->
+	<script src="js/app.js"></script>
+</body>
+
+</html>
